@@ -7,21 +7,25 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #282c34;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
       color: #fff;
       text-align: center;
+      position: relative;
+      overflow-x: hidden;
     }header {
   padding: 50px 20px 20px;
-  background-color: #3b3f51;
+  background: linear-gradient(135deg, #3b3f51, #5c5470);
 }
 
 h1 {
   margin-bottom: 10px;
-  font-size: 2.5em;
+  font-size: 2.8em;
+  color: #ffcc70;
 }
 
 p {
   font-size: 1.2em;
+  color: #ffeeee;
 }
 
 section {
@@ -30,6 +34,7 @@ section {
 
 h2 {
   margin-bottom: 20px;
+  color: #ffcc70;
 }
 
 ul {
@@ -40,12 +45,18 @@ ul {
 li {
   margin: 10px 0;
   font-size: 1.1em;
-  background-color: #444857;
+  background: linear-gradient(to right, #444857, #5f6272);
   padding: 10px;
   border-radius: 5px;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  transition: transform 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ff8a00, #e52e71);
 }
 
 footer {
@@ -55,9 +66,32 @@ footer {
   color: #aaa;
 }
 
+.emoji-top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2em;
+}
+
+.emoji-bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 2em;
+}
+
+.emoji-bottom-left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 2em;
+}
+
   </style>
 </head><body>
-  <header>
+  <div class="emoji-top-left">🚀</div>
+  <div class="emoji-bottom-right">🔥</div>
+  <div class="emoji-bottom-left">💻</div>  <header>
     <h1>XII TJKT 3</h1>
     <p>Presentasi: Cara Hosting Website</p>
   </header>  <section>
